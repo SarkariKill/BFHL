@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>21BEC0867</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>JSON Data Processor</h1>
+      <form id="dataForm">
+        <label for="jsonInput">Enter JSON Data:</label>
+        <textarea
+          id="jsonInput"
+          placeholder='{"data": ["M", "1", "334", "4", "B", "Z", "a"]}'
+          rows="6"
+          cols="50"
+        ></textarea>
+        <button type="submit">Submit</button>
+        <div id="errorMessage" class="error-message"></div>
+      </form>
+
+      <div id="dropdownContainer" style="display: none">
+        <label for="responseOptions">Select Options:</label>
+        <select id="responseOptions" multiple>
+          <option value="alphabets">Alphabets</option>
+          <option value="numbers">Numbers</option>
+          <option value="highestLowercaseAlphabet">
+            Highest lowercase alphabet
+          </option>
+        </select>
+      </div>
+
+      <div id="responseContainer" class="response-container"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
